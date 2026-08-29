@@ -1,0 +1,58 @@
+generated: '2026-08-29'
+method: probed
+source: https://stegra.com/.well-known/
+name: Stegra well-known documents
+description: >-
+  Probe of the RFC 8615 /.well-known/ namespace on Stegra's only public host.
+  Every path returned 404 from the Next.js application — no security.txt, no
+  api-catalog, no OAuth/OIDC discovery document, no AI plugin manifest, and no
+  A2A agent card. Recorded as an absence. No `WellKnown` or `SecurityTxt`
+  pointer is emitted in apis.yml because nothing was served.
+note: >-
+  stegra.com is a client-rendered Next.js site with a catch-all route: unknown
+  top-level paths such as /robots.txt, /llms.txt and /openapi.json answer HTTP 200
+  with the application's HTML shell rather than 404. Those 200s are soft-200s and
+  are NOT documents. Paths under /.well-known/ do correctly return 404.
+hosts:
+- host: stegra.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+soft_200_shell_paths:
+- path: /robots.txt
+  status: 200
+  body: HTML application shell, not a robots.txt
+- path: /llms.txt
+  status: 200
+  body: HTML application shell, not an llms.txt
+- path: /openapi.json
+  status: 200
+  body: HTML application shell, not an OpenAPI document
+- path: /swagger.json
+  status: 200
+  body: HTML application shell, not a Swagger document
+- path: /api-docs
+  status: 200
+  body: HTML application shell
+- path: /sitemap.xml
+  status: 200
+  body: HTML application shell, not an XML sitemap

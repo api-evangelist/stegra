@@ -1,0 +1,97 @@
+generated: '2026-08-29'
+method: searched
+source: https://registry.terraform.io/v1/providers/stegraab/ + https://api.github.com/orgs/stegraab
+name: Stegra packages
+description: >-
+  First-party packages published by Stegra AB under the stegraab GitHub organization
+  (github.com/stegraab, blog field https://stegra.com, location Sweden). These are
+  Terraform providers and a tflint ruleset Stegra maintains for its OWN internal
+  infrastructure automation — they are clients for third-party vendor APIs
+  (Nutanix, BeyondTrust Secure Remote Access, Smallstep step-ca), not SDKs for a
+  Stegra API. Stegra publishes no public API, so no `SDKs` pointer is emitted:
+  doing so would assert Stegra ships client libraries for an API it does not have.
+ownership_note: >-
+  Ownership confirmed from the GitHub org's own metadata — name "Stegra",
+  blog https://stegra.com, location Sweden, description "Decarbonizing at scale." —
+  and from the terraform-provider-sra description, "Stegra-maintained Terraform
+  provider for BeyondTrust Secure Remote Access". Not to be confused with
+  stegra.io, an unrelated Swedish motorcycle-GPS app company.
+registries_searched:
+- registry.terraform.io
+- registry.npmjs.org
+- pypi.org
+- rubygems.org
+- crates.io
+- pkg.go.dev
+package_count: 4
+packages:
+- name: stegraab/nutanix
+  registry: terraform
+  url: https://registry.terraform.io/providers/stegraab/nutanix
+  official: true
+  language: HCL/Go
+  version: 2.4.2-stegra.8
+  published: '2026-07-09'
+  downloads: 2366
+  tier: community
+  repository: https://github.com/stegraab/terraform-provider-nutanix
+  fork_of: https://github.com/nutanix/terraform-provider-nutanix
+  license: MPL-2.0
+  note: >-
+    Stegra-patched fork of the upstream Nutanix Terraform provider, released with a
+    -stegra.N suffix. Wraps the Nutanix Prism API, not a Stegra API.
+- name: stegraab/stepca
+  registry: terraform
+  url: https://registry.terraform.io/providers/stegraab/stepca
+  official: true
+  language: HCL/Go
+  version: 0.1.1
+  published: '2026-04-01'
+  downloads: 7825
+  tier: community
+  repository: https://github.com/stegraab/terraform-provider-stepca
+  license: Apache-2.0
+  note: >-
+    Stegra-authored (not a fork) Terraform provider for Smallstep step-ca certificate
+    authority. Most-downloaded of the four.
+- name: stegraab/sra
+  registry: terraform
+  url: https://registry.terraform.io/providers/stegraab/sra
+  official: true
+  language: HCL/Go
+  version: 1.3.0-stegra.1
+  published: '2026-08-28'
+  downloads: 1
+  tier: community
+  repository: https://github.com/stegraab/terraform-provider-sra
+  fork_of: https://github.com/BeyondTrust/terraform-provider-sra
+  license: Apache-2.0
+  note: >-
+    Stegra-maintained fork of BeyondTrust's Secure Remote Access provider. Published
+    to the Terraform Registry one day before this probe.
+- name: tflint-ruleset-stegra
+  registry: github
+  url: https://github.com/stegraab/tflint-ruleset-stegra
+  official: true
+  language: Go
+  version: v0.2.0
+  published: '2025-11-14'
+  repository: https://github.com/stegraab/tflint-ruleset-stegra
+  license: NOASSERTION
+  note: >-
+    Stegra's own tflint ruleset. Distributed as a GitHub release only — there is no
+    package-registry metadata endpoint for tflint rulesets, so the version and date
+    are read from the GitHub releases API.
+x-evidence:
+- url: https://api.github.com/orgs/stegraab
+  status: 200
+- url: https://api.github.com/orgs/stegraab/repos?per_page=100
+  status: 200
+- url: https://registry.terraform.io/v1/providers/stegraab/nutanix
+  status: 200
+- url: https://registry.terraform.io/v1/providers/stegraab/stepca
+  status: 200
+- url: https://registry.terraform.io/v1/providers/stegraab/sra
+  status: 200
+- url: https://api.github.com/orgs/stegra
+  status: 404

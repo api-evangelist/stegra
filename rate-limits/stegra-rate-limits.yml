@@ -1,0 +1,19 @@
+generated: '2026-08-29'
+method: searched
+source: https://stegra.com/en
+name: Stegra rate limits
+limit_count: 0
+rate_limits: []
+response_headers: []
+note: >-
+  No rate limits are documented because Stegra publishes no API. There is no
+  developer portal, no API reference and no machine-readable contract on any
+  Stegra-controlled host, so there is no runtime surface to signal limits on and
+  no headers to record. An honest zero. No `RateLimits` pointer is emitted in
+  apis.yml.
+x-evidence:
+- url: https://stegra.com/openapi.json
+  status: 200
+  body: HTML application shell (soft-200), not an OpenAPI document
+- url: https://stegra.com/.well-known/api-catalog
+  status: 404

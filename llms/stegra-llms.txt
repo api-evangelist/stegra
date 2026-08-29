@@ -1,0 +1,58 @@
+# Stegra
+
+> Stegra (formerly H2 Green Steel) is a Stockholm-headquartered industrial company building
+> a large-scale near-zero-emission steel plant in Boden, northern Sweden. It replaces coking
+> coal with green hydrogen from a giga-scale electrolyzer running on renewable Nordic
+> electricity, integrating hydrogen production, direct-reduced green iron and steelmaking on
+> one 270-hectare site. Its products are green steel, green iron and green hydrogen.
+
+## Important
+
+Stegra publishes **no public API**. As of 2026-08-29 there is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL contract, no MCP server and no A2A agent card on any
+Stegra-controlled host. Do not attempt to call a Stegra API — there is none to call.
+Commercial enquiries about green steel, green iron or green hydrogen go through the contact
+form, not through an integration.
+
+Not to be confused with **stegra.io**, an unrelated Swedish motorcycle-GPS app company.
+
+## Company
+
+- [Stegra](https://stegra.com/en): Company home page.
+- [We are Stegra](https://stegra.com/en/about-us): Company background, founding and leadership.
+- [Get in touch](https://stegra.com/en/get-in-touch): Contact form — the only inbound channel.
+- [News and stories](https://stegra.com/en/news-and-stories): Company newsroom.
+- [Reports](https://stegra.com/en/reports): Published PDFs — code of conduct, supplier code of
+  conduct, Boden biodiversity and bird inventories.
+
+## Products
+
+- [Green steel](https://stegra.com/en/green-steel)
+- [Green iron](https://stegra.com/en/green-iron)
+- [Green hydrogen](https://stegra.com/en/green-hydrogen)
+- [Our process](https://stegra.com/en/green-platforms)
+- [The Boden plant](https://stegra.com/en/the-boden-plant)
+
+## Engineering
+
+- [stegraab on GitHub](https://github.com/stegraab): Stegra's public GitHub organization.
+  Four repositories, all internal infrastructure tooling — Terraform providers and a tflint
+  ruleset. These are clients for third-party vendor APIs, not SDKs for a Stegra API.
+- [stegraab/stepca](https://registry.terraform.io/providers/stegraab/stepca): Terraform
+  provider for Smallstep step-ca, authored by Stegra. v0.1.1, published 2026-04-01.
+- [stegraab/nutanix](https://registry.terraform.io/providers/stegraab/nutanix): Stegra-patched
+  fork of the Nutanix provider. v2.4.2-stegra.8, published 2026-07-09.
+- [stegraab/sra](https://registry.terraform.io/providers/stegraab/sra): Stegra-maintained fork
+  of BeyondTrust's Secure Remote Access provider. v1.3.0-stegra.1, published 2026-08-28.
+
+## Policies
+
+- [Privacy](https://stegra.com/en/privacy)
+- [Whistleblowing](https://stegra.com/en/whistleblowing)
+- [Supplier information](https://stegra.com/en/supplier-info)
+
+## Optional
+
+- [Working at Stegra](https://stegra.com/en/career)
+- [Open positions](https://stegra.com/en/job-openings)
+- [Media bank](https://brand.stegra.com/point/en/stegra/mediaassets)

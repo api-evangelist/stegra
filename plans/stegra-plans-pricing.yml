@@ -1,0 +1,21 @@
+generated: '2026-08-29'
+method: searched
+source: https://stegra.com/en
+name: Stegra plans and pricing
+plan_count: 0
+plans: []
+note: >-
+  Stegra publishes no API plans, no developer pricing and no self-serve sign-up,
+  because it operates no public API. It is a heavy-industry steel, iron and hydrogen
+  manufacturer selling physical product under negotiated offtake agreements; the
+  only inbound commercial channel on the site is the contact form at
+  https://stegra.com/en/get-in-touch. No /pricing or /plans page exists on
+  stegra.com — the site navigation carries products, plant, careers, news and
+  policy pages only. An honest zero, not an unchecked field. No `Plans` or
+  `Pricing` pointer is emitted in apis.yml, because emitting one would assert a
+  pricing surface the provider does not publish.
+x-evidence:
+- url: https://stegra.com/en
+  status: 200
+- url: https://stegra.com/en/get-in-touch
+  status: 200
